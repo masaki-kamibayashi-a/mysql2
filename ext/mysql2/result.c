@@ -164,8 +164,8 @@ static VALUE mysql2_set_field_string_encoding(VALUE val, MYSQL_FIELD field, rb_e
 
     enc_name = (field.charsetnr-1 < MYSQL2_CHARSETNR_SIZE) ? mysql2_mysql_enc_to_rb[field.charsetnr-1] : NULL;
 
-    fprintf(stderr, "field.charsetnr: %d\n", field.charsetnr);
-    fprintf(stderr, "enc_name: %s\n", enc_name);
+    // fprintf(stderr, "field.charsetnr: %d\n", field.charsetnr);
+    // fprintf(stderr, "enc_name: %s\n", enc_name);
 
     if (enc_name != NULL) {
       /* use the field encoding we were able to match */
