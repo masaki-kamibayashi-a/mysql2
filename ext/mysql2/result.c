@@ -162,6 +162,10 @@ static VALUE mysql2_set_field_string_encoding(VALUE val, MYSQL_FIELD field, rb_e
     int enc_index;
 
     enc_name = mysql2_mysql_enc_to_rb[field.charsetnr-1];
+
+    fprintf(stderr, "field.charsetnr: %d\n", field.charsetnr);
+    fprintf(stderr, "enc_name: %s\n", enc_name);
+
     if (enc_name != NULL) {
       /* use the field encoding we were able to match */
       enc_index = rb_enc_find_index(enc_name);
