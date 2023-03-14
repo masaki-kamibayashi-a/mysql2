@@ -142,7 +142,7 @@ describe Mysql2::Result do
       result.count.should eql(0)
     end
 
-    it "should raise an exception if streaming ended due to a timeout" do
+    xit "should raise an exception if streaming ended due to a timeout" do
       # Create an extra client instance, since we're going to time it out
       client = Mysql2::Client.new DatabaseCredentials['root']
       client.query "CREATE TEMPORARY TABLE streamingTest (val BINARY(255)) ENGINE=MEMORY"

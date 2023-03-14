@@ -1,9 +1,9 @@
 [root]
-host=localhost
-user=LOCALUSERNAME
+host=mysql_aws
+user=mysql2
 password=
 
 [client]
-host=localhost
-user=LOCALUSERNAME
+host=mysql_aws
+user=mysql2
 password=

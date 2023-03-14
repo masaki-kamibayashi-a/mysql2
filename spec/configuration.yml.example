@@ -1,17 +1,17 @@
 root:
-  host: localhost
+  host: mysql_aws
   username: root
   password:
   database: test
 
 user:
-  host: localhost
-  username: LOCALUSERNAME
+  host: mysql_aws
+  username: mysql2
   password:
   database: mysql2_test
 
 numericuser:
-  host: localhost
-  username: LOCALUSERNAME
+  host: mysql_aws
+  username: mysql2
   password:
   database: 12345

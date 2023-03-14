@@ -232,7 +232,7 @@ describe Mysql2::Client do
       it "should > 0" do
         # "the statement produces extra information that can be viewed by issuing a SHOW WARNINGS"
         # http://dev.mysql.com/doc/refman/5.0/en/explain-extended.html
-        @client.query("explain extended select 1")
+        @client.query("explain select 1")
         @client.warning_count.should > 0
       end
     end
